@@ -1,0 +1,26 @@
+{
+  "name": "tme",
+  "version": "1.0.0",
+  "description": "JS testing framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EJBelford/tme.git"
+  },
+  "author": "Gene Belford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EJBelford/tme/issues"
+  },
+  "homepage": "https://github.com/EJBelford/tme#readme",
+  "bin": {
+    "tme": "index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "jsdom": "^20.0.2"
+  }
+}
