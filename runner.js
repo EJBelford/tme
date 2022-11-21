@@ -63,11 +63,11 @@ class Runner {
         beforeEaches.push(fn);
       };
 
-      global.it = (desc, fn) => {
+      global.it = async (desc, fn) => {
         // console.log(chalk.yellow('DEBUG: runTests:'), desc);
         beforeEaches.forEach(func => func());
         try {
-          fn();
+          await fn();
           console.log(chalk.green('\t', 'OK:   '), desc);
         } catch (err) {
           // const message = err.message.replace(/\n\g, '\n\t\t')
